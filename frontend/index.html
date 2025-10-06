@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Policy Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏢 AI Policy Assistant</h1>
+            <p>Ask questions about company policies and get instant answers</p>
+        </header>
+
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" id="questionInput" placeholder="How many casual leaves do I get per year?" />
+                <button id="askBtn" class="btn btn-primary">Ask</button>
+            </div>
+            <div class="action-buttons">
+                <button id="clearBtn" class="btn btn-secondary">Clear</button>
+                <button id="copyBtn" class="btn btn-secondary">Copy Answer</button>
+            </div>
+        </div>
+
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Searching policies...</p>
+        </div>
+
+        <div id="result" class="result hidden">
+            <div class="answer-section">
+                <h3>Answer</h3>
+                <div id="answer" class="answer"></div>
+                <div id="confidence" class="confidence"></div>
+            </div>
+
+            <div id="citations" class="citations"></div>
+            
+            <div id="followUp" class="follow-up"></div>
+
+            <div class="escalation">
+                <p>Can't find an answer?</p>
+                <a id="contactHR" href="mailto:hr@company.com?subject=Policy%20Query" class="btn btn-outline">Contact HR</a>
+            </div>
+        </div>
+
+        <div id="error" class="error hidden">
+            <h3>Error</h3>
+            <p id="errorMessage"></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

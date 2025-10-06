@@ -1,0 +1,19 @@
+# policies/leave_policy_v3.txt
+Title: Leave Policy v3
+Effective: 2025-01-01
+Region: IN
+
+1. Annual / Earned Leave (EL)
+Full-time employees receive 12 days per year, credited monthly. Carry forward up to 30 days; encashment allowed only at exit.
+
+2. Sick Leave (SL)
+8 days per year. Medical certificate required if absent for >2 consecutive working days. Unused sick leave cannot be carried forward; it lapses at year-end.
+
+2.3 Carry Forward
+Sick leave does not carry forward and expires on Dec 31 each year.
+
+3. Casual Leave (CL)
+6 days per year for urgent/personal needs.
+
+Special Leaves
+Marriage: 8 days; Bereavement: 3 days (immediate family).

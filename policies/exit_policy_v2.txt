@@ -1,0 +1,19 @@
+# policies/exit_policy_v2.txt
+Title: Exit Policy v2
+Effective: 2024-04-01
+Region: IN
+
+1. Probation
+Standard 3 months (may vary by role).
+
+2. Notice Period
+30 days during probation; 60 days after confirmation.
+
+3. Resignation Process
+Submit resignation via HRMS/Email; serve notice period unless waived.
+
+4. Handover
+Mandatory knowledge transfer; return company assets.
+
+5. Final Settlement
+Processed within 30 days of last working day; includes salary dues and statutory payouts.
