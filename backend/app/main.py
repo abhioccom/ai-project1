@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException, Query, Request, UploadFile, File
+from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from typing import Dict, Any, List
@@ -129,3 +130,5 @@ async def whatsapp_webhook(request: Request):
             json={"messaging_product": "whatsapp", "to": from_wa, "type": "text", "text": {"preview_url": False, "body": answer[:4000]}},
         )
     return {"ok": True}
+
+app.mount("/", StaticFiles(directory="../frontend", html=True), name="frontend")
