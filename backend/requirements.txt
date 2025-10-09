@@ -1,20 +1,24 @@
+# Core Framework
 fastapi==0.112.2
 uvicorn[standard]==0.30.6
 python-dotenv==1.0.1
+python-multipart==0.0.9   # Required for form/file uploads in FastAPI
 
-# Compatible Pydantic version for LangChain
+# LangChain and Dependencies
 pydantic>=2.7.4,<3.0.0
-
 langchain==0.2.15
 langchain-community==0.2.15
 langchain-groq==0.1.4
 groq==0.4.1
 
-# Fix ImportError: cached_download
+# NLP and Embeddings
 sentence-transformers==2.2.2
-huggingface-hub==0.16.4
+huggingface-hub==0.16.4  # Compatible version (fixes cached_download issue)
 
+# File Handling
 pypdf==4.3.1
 python-docx==1.1.2
-httpx==0.27.2
 docx2txt==0.8
+
+# HTTP and Networking
+httpx==0.27.2
